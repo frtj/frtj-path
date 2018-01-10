@@ -1,6 +1,6 @@
 package no.frtj.frtjpath;
 
-public class StringUtil {
+class StringUtil {
 
     // shameless copy from apache StringUtils.isEmpty
 
