@@ -1,12 +1,28 @@
-## ** **Under Construction, Alpha version Status** **
+## ** **Under Construction, Alpha version Status, everything may change anytime or not at all** **
+
+A simple lib to represent a Path.
+
+```
+/ in beginning means root
+
+/a this is a file
+
+/a/ this is a directory because it ends with a /
+```
+
 
 #### Rationale:
-This small library was made because I needed to handle some path stuff in URL 
-in one of my private projects, and decided to roll my own code.
+This small library was made because I needed to represent a path to file that may or may not exists. It has unix/linux 
+style paths to it, but it is not ment to follow any RFC or whatever. 
 
-It is inspired by Java Nio2 Path. While java.util.Path is closely linked to 
-operating system files and paths and can represent Windows and *Nix, this library tries to be more generic.
+java.nio.file.Path is closely attached to the filesystem and the existing of real files and directories. I wanted something
+that I could use without real stuff on disk.
 
+
+#### Todo:
+- Better support for relative paths
+- Handle . and ..
+- Joining/splitting of paths
 
 #### Maven
 ```
